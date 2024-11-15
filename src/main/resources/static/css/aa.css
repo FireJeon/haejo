@@ -1,0 +1,207 @@
+/************************ header *************************/
+header {
+  border-bottom: 1px solid #E7E7E7;
+  background-color: #FFFFFF;
+}
+.main-navbar {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  justify-content: space-between;
+}
+.main-navbar .main-navbar-list { 
+  height: 50px;
+  margin: 0;
+  display: flex;
+}
+.main-navbar .main-navbar-list .main-list-item {
+  padding-left: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main-navbar .main-navbar-list .main-list-item li.active::after {
+  content: "";
+}
+.main-navbar .main-navbar-list .main-list-item li {
+  color: #000;
+}
+.main-navbar .main-navbar-list .main-list-item li::marker {
+  content: "";
+}
+.main-navbar .main-navbar-list .main-list-item li::after {
+  margin-left: 10px;
+}
+.main-navbar .main-navbar-list .main-list-item.login {
+  font-size: 12px;
+  align-items: center;
+  gap: 10px;
+}
+.main-navbar .main-navbar-list .main-list-item.login .login_profile {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.main-navbar .main-navbar-list .main-list-item li a:hover {
+  font-weight: 400;
+}
+/* 기본 default 값이 숨김 처리 */
+.main-nav-list-menu {
+  display: none;
+  transition: all 0.2s;
+}
+.main-nav-list-menu.active {
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background: #fff;
+  animation: fadeIn .3s ease-in-out;
+}
+.main-nav-list-menu .main-nav-list-menu-item {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 225px;
+  flex-basis: 1em;
+}
+.main-nav-list-menu .main-nav-list-menu-item .menu-item {
+  flex-basis: 150px;
+}
+.main-nav-list-menu .main-nav-list-menu-item ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+.main-nav-list-menu .main-nav-list-menu-item ul li {
+  padding: 8px 0;
+  margin: 0;
+}
+.main-nav-list-menu .main-nav-list-menu-item ul li a:hover {
+  font-weight: 400;
+}  
+.main-nav-list-menu .main-nav-list-menu-item ul li b {
+  color: seagreen;
+}
+.main-nav-list-menu .main-nav-list-menu-item .menu-item {
+  padding: 0 5px;
+}
+
+#chatroom {
+  width: auto;
+  height: 900px;
+}
+
+.chatlist {
+  width: 20%;
+  height: 100%;
+  float: left;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background: #E7E7E7;
+}
+.search {
+  margin-top: 11px;
+  margin-bottom: 18px;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: auto;
+  height: auto;
+  position: relative;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.CRul{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.CRli {
+  list-style: none;
+  margin: 10px;
+  border: 1px solid #000;
+  text-align: left;
+}
+
+.chatinfo {
+  border-left: 1px solid #000;
+  width: 30%;
+  height: 100%;
+  float: right;
+  box-sizing: border-box;
+
+}
+
+.ciuserul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.ciuserli {
+  list-style: none;
+  margin: 10px;
+  border: 1px solid #000;
+  text-align: left;
+}
+
+.msgbox {
+  width: 50%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  overflow: auto;
+
+}
+
+.msguser {
+  margin-left: 10px;
+  width: auto;
+  border-bottom: 1px solid #000;
+}
+
+.MSGul {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
+
+.MSGli {
+  list-style: none;
+  margin: 10px;
+  background: #E7E7E7;
+}
+
+.msgsend {
+  margin-left: 10px;
+  width: 48.7%;
+  border-top: 1px solid #000;
+  position: absolute;
+  bottom: 35px;
+}
+
+#messageInput {
+  margin-top: 10px;
+  width: 70%;
+  border: 0px;
+}
+
+.cisearch {
+  border-bottom: 1px solid #000;
+}
+
+.ciimg {
+  border-top: 1px solid #000;
+}
+
+.cifile {
+  border-top: 1px solid #000;
+}
+
+.ci {
+  border-top: 1px solid #000;
+}
